@@ -344,7 +344,9 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd-V1-ndk.vendor
+    android.system.net.netd-V1-ndk.vendor \
+    libloc_net_iface \
+    libloc_net_iface.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
