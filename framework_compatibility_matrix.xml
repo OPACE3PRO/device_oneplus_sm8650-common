@@ -23,5 +23,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.touch</name>
+        <version>2</version>
+        <interface>
+            <name>IOplusTouch</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
 
