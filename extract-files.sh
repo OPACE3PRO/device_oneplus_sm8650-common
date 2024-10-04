@@ -64,11 +64,22 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+         odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff|odm/bin/hw/vendor-oplus-hardware-touch-V2-service|odm/bin/touchDaemon|odm/bin/touchHidlTest)
+            sed -i "s/\/default/\/oplus\x00\x00/" "${2}"
+            grep -q android.hardware.biometrics.fingerprint-V4-ndk.so "${2}" || "$PATCHELF" --replace-needed "android.hardware.biometrics.fingerprint-V3-ndk.so" "android.hardware.biometrics.fingerprint-V4-ndk.so" "${2}"
+            grep -q android.hardware.biometrics.common-V4-ndk.so "${2}" || "$PATCHELF" --replace-needed "android.hardware.biometrics.common-V3-ndk.so" "android.hardware.biometrics.common-V4-ndk.so" "${2}"
+            ;;
         odm/etc/camera/CameraHWConfiguration.config)
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
             ;;
         odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc)
             sed -i "8i\    task_profiles ProcessCapacityHigh MaxPerformance" "${2}"
+            ;;
+        odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc|odm/etc/vintf/manifest/manifest_touch_aidl.xml)
+            sed -i "s/IOplusTouch\/default/IOplusTouch\/oplus/" "${2}"
+            ;;
+        odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v3.xml)
+            sed -i "s/IFingerprint\/default/IFingerprint\/oplus/" "${2}"
             ;;
         odm/lib64/libCOppLceTonemapAPI.so|odm/lib64/libCS.so|odm/lib64/libSuperRaw.so|odm/lib64/libYTCommon.so|odm/lib64/libyuv2.so)
             "${PATCHELF_0_17_2}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
