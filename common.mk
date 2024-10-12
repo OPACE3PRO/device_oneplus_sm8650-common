@@ -472,6 +472,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_ui \
     libcodec2_shim \
+    libinput_shim \
+    libgui_shim \
     libhidlbase_shim
 
 # Shipping API
