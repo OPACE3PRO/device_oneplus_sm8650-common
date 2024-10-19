@@ -1,9 +1,7 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Ace 3 Pro (PJX110_14.1.0.209(CN01)).
+## are from OnePlus Ace 3 Pro (PJX110_15.0.0.301(CN01)).
 
 # ACDBs
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd
 vendor/etc/acdbdata/ffv_models/ffv__6.2.5_0.1__eai_3.4__enpu_v4.pmd
@@ -25,7 +23,6 @@ vendor/etc/acdbdata/haptics_data/thud.pcm
 vendor/etc/acdbdata/haptics_data/tick.pcm
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__3.1.0_0.0__3.2.0_0.0__eai_2.7_enpu3.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1.0_0.0__3.2.0_0.0__eai_2.7_enpu_v3.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__3.1.1_0.0__3.2.0_0.1__eai_3.0_enpuv4.pmd
@@ -69,17 +66,11 @@ odm/lib/rfsa/adsp/capi_v3_oprec.so
 odm/lib/rfsa/adsp/libarc_htp_driver_skel.so
 odm/lib/rfsa/adsp/libCalculator_skel.so
 odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so
-odm/lib/rfsa/adsp/libktvdrc.so
 odm/lib/rfsa/adsp/libktveffect.so
-odm/lib/rfsa/adsp/libktveq.so
-odm/lib/rfsa/adsp/libktvns.so
-odm/lib/rfsa/adsp/libktvpitchshift.so
-odm/lib/rfsa/adsp/libktvreverb.so
-odm/lib/rfsa/adsp/libktvvolume.so
 odm/lib/rfsa/adsp/libQnnHtpV75.so
 odm/lib/rfsa/adsp/libQnnHtpV75Skel.so
 odm/lib/rfsa/adsp/libQnnSaver.so
-odm/lib/rfsa/adsp/libsixth_rx_v3.so
+odm/lib/rfsa/adsp/libsixth_rx_v3_5_21.so
 odm/lib/rfsa/adsp/libSnpeHtpV75Skel.so
 odm/lib/rfsa/adsp/nlc_bgth_v1_5.so
 vendor/lib/rfsa/adsp/chre_qsh_shim.so
@@ -261,6 +252,7 @@ vendor/lib64/lib_bt_aptx.so
 vendor/lib64/lib_bt_ble.so
 vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbtnv.so
+vendor/lib64/libchrome.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
 vendor/lib64/vendor.qti.hardware.bttpi-V3-ndk.so
@@ -1243,6 +1235,7 @@ vendor/lib64/hw/camera.qcom.sm8650.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.offline.so
 vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/libGCore4Cell_32E2.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
 vendor/lib64/libarcsoft_triple_sat.so
@@ -1272,7 +1265,6 @@ vendor/lib64/libdepthcomputation.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libeepromcutter.so
-vendor/lib64/libfastcrc.so
 vendor/lib64/libfeutils.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhdr_stub.so
@@ -1521,7 +1513,6 @@ vendor/lib64/libnspdescriptorhandler.so
 vendor/lib64/libnspdiag.so
 vendor/lib64/libnspextensionloader.so
 vendor/lib64/libnspframework.so
-vendor/lib64/libnspframeworkutility.so
 vendor/lib64/libnspgraphing.so
 vendor/lib64/libnspipc.so
 vendor/lib64/libnsposal.so
@@ -1549,6 +1540,8 @@ vendor/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm
+vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so
 vendor/lib64/libPanelChaplin.so
 
 # Display (HDR)
@@ -1569,6 +1562,7 @@ vendor/lib64/libdpp_manager.so
 vendor/lib64/libdpps.so
 vendor/lib64/libgame_enhance.so
 vendor/lib64/libhistogram.so
+vendor/lib64/libhwcsensor.so
 vendor/lib64/libmemutils.so
 vendor/lib64/libqdcm-algo.so
 vendor/lib64/libqdcm-json-mode-parser.so
@@ -1653,17 +1647,11 @@ vendor/lib64/libubwcp.so
 vendor/lib64/libvmfilexfer.so
 
 # Display calibration data
-vendor/etc/display/qdcm_calib_data_AA545_P_3_A0005_dsc_cmd_mode_panel.json
-vendor/etc/display/qdcm_calib_data_AC090_P_3_A0005_dsc_cmd_mode_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json
-vendor/etc/display/qdcm_calib_data_enzo_boe_ili7838e_1264_2780_dsc_cmd_mode_panel.json
-vendor/etc/display/qdcm_calib_data_enzo_boe_ili7838e_1264_2780_evt_dsc_cmd_mode_panel.json
-vendor/etc/display/qdcm_calib_data_enzo_boe_ili7838e_1264_2780_high_pre_dsc_cmd_mode_panel.json
-vendor/etc/display/qdcm_calib_data_enzo_boe_ili7838e_1264_2780_pvt_bd_dsc_cmd_mode_panel.json
 vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json
 vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
 vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
@@ -1800,6 +1788,12 @@ odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml|78ca4f56ed1f5dd48c18671871
 odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.olc2-V2-ndk.so
+odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so
+
+# Fingerprint - PJD110_C15.0.0.204
+odm/lib64/libclstc_fod_color.so
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_gx.b00
@@ -1937,7 +1931,7 @@ vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsys_info_cache.so
 vendor/lib64/libwifiobserver.so
 vendor/lib64/libxtadapter.so
-vendor/lib64/vendor.qti.gnss-V5-ndk.so
+vendor/lib64/vendor.qti.gnss-V6-ndk.so
 vendor/lib64/vendor.qti.gnss-service.so
 
 # HDCP
@@ -1949,6 +1943,7 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/libmm-hdcpmgr.so
 
 # IMS(SYSTEM)
+system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/app/ImsRcsService/ImsRcsService.apk;NODEXPO
 system_ext/etc/permissions/rsmcService.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
@@ -1957,7 +1952,6 @@ system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 system_ext/framework/oplus-ims-ext.jar
 system_ext/framework/rsmcService.jar
-system_ext/framework/sts-telephony-plugin.jar
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
 system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar
@@ -2091,8 +2085,12 @@ vendor/lib64/vendor.qti.hardware.limits@1.2.so
 
 # Media
 odm/lib64/libc2filterplugin.so
+odm/lib64/libdolbydecoderprocessor.so
+odm/lib64/libdolbyeglcore.so
+odm/lib64/libdolbyencoderprocessor.so
 odm/lib64/libosie_process.so
 odm/lib64/libosie_stub.so
+odm/lib64/libdolbyottcameracontrol.so
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 vendor/bin/hw/qconfigservice
@@ -2141,6 +2139,8 @@ vendor/lib64/libqcodec2_base.so
 vendor/lib64/libqcodec2_basecodec.so
 vendor/lib64/libqcodec2_core.so
 vendor/lib64/libqcodec2_cvpfilter.so
+odm/lib64/libqcodec2_dolbydecoderfilter.so
+odm/lib64/libqcodec2_dolbyencoderfilter.so
 vendor/lib64/libqcodec2_filterbase.so
 vendor/lib64/libqcodec2_hooks.so
 vendor/lib64/libqcodec2_imgtxrfilter.so
@@ -2150,8 +2150,6 @@ vendor/lib64/libqcodec2_streaminteg_filter.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libqconfigclient.so
-vendor/lib64/libqtbase.so
-vendor/lib64/libqtnodes.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 vendor/lib64/vendor.qti.hardware.qconfig-V1-ndk.so
 
@@ -2209,7 +2207,6 @@ odm/lib64/libhta_hexagon_runtime_snpe.so
 # NFC
 odm/etc/nfc/libnfc-mtp-SN220.conf_22877:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_22877:vendor/etc/libnfc-nci.conf
-odm/lib/libsn220u_fw.so:vendor/lib64/libsn100u_fw.so
 
 # OSENSE
 odm/lib64/libosenseaidlhalclient.so
@@ -2219,6 +2216,8 @@ odm/bin/hw/vendor-oplus-hardware-performance-V1-service
 odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc
 odm/etc/vintf/manifest/manifest_performance_aidl.xml
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.performance-V2-ndk.so
+odm/lib64/vendor.oplus.hardware.performance-V3-ndk.so
 
 # OPLUS Project
 odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service
@@ -2270,6 +2269,7 @@ system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
 system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/bin/qcc-vendor
 vendor/etc/init/init.qccvendor.rc
@@ -2778,6 +2778,8 @@ odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
 odm/etc/vintf/manifest/manifest_touch_aidl.xml
 odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so
+
+# Touch(URCC)
 odm/bin/hw/vendor.oplus.hardware.urcc-service
 odm/etc/init/vendor.oplus.hardware.urcc-service.rc
 odm/etc/vintf/manifest/vendor.oplus.hardware.urcc-service.xml
@@ -2808,7 +2810,6 @@ odm/firmware/ufs/ufs_version_config.xml
 
 # Video
 vendor/lib64/libstreamparser.so
-vendor/lib64/libstreamprocessor.so
 vendor/lib64/libvideotxr.so
 vendor/lib64/libvideoutils.so
 
@@ -2823,7 +2824,6 @@ vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/libvppimmotion.so
 vendor/lib64/libvpplibrary.so
-vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
