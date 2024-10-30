@@ -102,8 +102,31 @@ on property:vendor.post_boot.parsed=1
     # Kill WALT CPU input boost
     write /proc/sys/walt/input_boost/input_boost_freq "0 0 0 0 0 0 0"
     write /proc/sys/walt/input_boost/input_boost_ms 0
+
     # Kill oplus sched assist
     write /proc/oplus_scheduler/sched_assist/sched_assist_enabled 0
+
+    # Walt tunings
+    write /proc/sys/walt/sched_upmigrate "75 95 95"
+    write /proc/sys/walt/sched_downmigrate "65 85 85"
+    write /proc/sys/walt/sched_group_downmigrate 85
+    write /proc/sys/walt/sched_group_upmigrate 100
+    write /proc/sys/walt/sched_coloc_downmigrate_ns 20000000
+    write /proc/sys/walt/sched_util_busy_hyst_cpu_ns "8500000 8500000 8500000 5000000 5000000 5000000 5000000 5000000"
+    write /proc/sys/walt/sched_util_busy_hyst_cpu_util "1 1 1 15 15 15 15 15"
+    write /proc/sys/walt/sched_early_downmigrate "2009 1575 1204"
+    write /proc/sys/walt/sched_early_upmigrate "1680 1077 1077"
+    write /proc/sys/walt/sched_pipeline_cpus 120
+    write /proc/sys/walt/sched_fmax_cap "1708800 2707200 2147483647 2147483647"
+    write /sys/devices/system/cpu/cpufreq/policy0/walt/down_rate_limit_us 1000
+    write /sys/devices/system/cpu/cpufreq/policy0/walt/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy2/walt/down_rate_limit_us 1000
+    write /sys/devices/system/cpu/cpufreq/policy2/walt/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy5/walt/down_rate_limit_us 1000
+    write /sys/devices/system/cpu/cpufreq/policy5/walt/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy7/walt/down_rate_limit_us 1000
+    write /sys/devices/system/cpu/cpufreq/policy7/walt/up_rate_limit_us 500
+    write /proc/sys/walt/sched_conservative_pl 1
 
 service oplus_sensor_fb /odm/bin/oplus_sensor_fb
     user system
