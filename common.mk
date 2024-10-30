@@ -528,6 +528,8 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal-V1-ndk.vendor \
     android.hardware.thermal@2.0.vendor
 
+$(call soong_config_set,qti_thermal,netlink,true)
+
 # Trusted User Interface
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor \
