@@ -23,6 +23,74 @@
          The default is false. -->
     <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
 
+    <!-- A vibration waveform for notifications that specify DEFAULT_VIBRATE.
+         If the device supports vibration frequency control, this value is a float array with
+         values grouped as
+         { targetAmplitude (within [0,1]), targetFrequency (in hertz), duration (in milliseconds) }
+         If the device doesn't support frequency control, then the value is a float array with the
+         values grouped as { targetAmplitude (within [0,255]), duration (in milliseconds) }
+     -->
+    <array name="config_defaultNotificationVibeWaveform">
+        <item>33</item>
+        <item>50</item>
+        <item>51</item>
+        <item>50</item>
+        <item>75</item>
+        <item>50</item>
+        <item>113</item>
+        <item>50</item>
+        <item>170</item>
+        <item>50</item>
+        <item>255</item>
+        <item>100</item>
+        <item>0</item>
+        <item>350</item>
+        <item>38</item>
+        <item>25</item>
+        <item>62</item>
+        <item>25</item>
+        <item>100</item>
+        <item>25</item>
+        <item>160</item>
+        <item>25</item>
+        <item>255</item>
+        <item>200</item>
+    </array>
+
+    <!-- A vibration waveform for notifications that do not specify vibration but vibrate anyway,
+         because the device is in vibrate mode. If the device supports vibration frequency control,
+         this value is a float array with values grouped as
+         { targetAmplitude (within [0,1]), targetFrequency (in hertz), duration (in milliseconds) }
+         If the device doesn't support frequency control, then the value is a float array with the
+         values grouped as { targetAmplitude (within [0,255]), duration (in milliseconds) }
+     -->
+    <array name="config_notificationFallbackVibeWaveform">
+        <item>33</item>
+        <item>50</item>
+        <item>51</item>
+        <item>50</item>
+        <item>75</item>
+        <item>50</item>
+        <item>113</item>
+        <item>50</item>
+        <item>170</item>
+        <item>50</item>
+        <item>255</item>
+        <item>100</item>
+        <item>0</item>
+        <item>350</item>
+        <item>38</item>
+        <item>25</item>
+        <item>62</item>
+        <item>25</item>
+        <item>100</item>
+        <item>25</item>
+        <item>160</item>
+        <item>25</item>
+        <item>255</item>
+        <item>200</item>
+    </array>
+
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
