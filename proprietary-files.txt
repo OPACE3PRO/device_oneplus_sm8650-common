@@ -1792,8 +1792,6 @@ odm/lib64/libolc_vnd.so
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.olc2-V2-ndk.so
-odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so
-odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so
 
 # Fingerprint - From Oneplus 12
 odm/lib64/libclstc_fod_color.so|6c566c31f1878193eb0d659090da46fcb0f67ba4
@@ -2777,8 +2775,6 @@ odm/bin/hw/vendor-oplus-hardware-touch-V2-service
 odm/etc/init/init.touchDaemon.rc
 odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
 odm/etc/vintf/manifest/manifest_touch_aidl.xml
-odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so
-odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so
 
 # Touch(URCC)
 odm/bin/hw/vendor.oplus.hardware.urcc-service
