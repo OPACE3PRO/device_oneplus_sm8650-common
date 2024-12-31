@@ -1796,7 +1796,7 @@ odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so
 
 # Fingerprint - From Oneplus 12
-odm/lib64/libclstc_fod_color.so|89370581422ee2801cc3acb33658cd16aeb629c6
+odm/lib64/libclstc_fod_color.so|6c566c31f1878193eb0d659090da46fcb0f67ba4
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_gx.b00
@@ -1961,7 +1961,7 @@ system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|c27f4e77d677a3e8d1c1c91ca1b4
 system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so|4cf18759170f7de629d7197bda926048ebddc481
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|961321653e924726bd01af6bfbb33c6740bc66af
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e8bea3fe2d
--system_ext/app/ImsRcsService/ImsRcsService.apk;NODEXPO|8a421431e6dcdadf281a55861c7256e24f6e223c
+-system_ext/app/ImsRcsService/ImsRcsService.apk;NODEXPO|8f4316fe39e8e34ee999f5cb9c346ea2b90c386d
 -system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|15781e2856f4da51f548f43de9d3af58c9f49df1
 -system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar|3641e287eaeb8fb936a16cdf260f09719bf0f5d4
 -system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar|598f05b21960d224dd36dce61638281aecc968b8
@@ -1977,7 +1977,7 @@ system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|40bd25d668607efb933fecd6265940d89f21057b
 -system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|04f0b4c1ce0bd7ef2fe2153289f5a752c7c1c7cf
 -system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar|26388f7cd876286822e536bb76b1277ef1dc76fa
--system_ext/priv-app/ims/ims.apk;NODEXPO|724e435ffa83f01bb8c841d0e45e3a772742c91b
+-system_ext/priv-app/ims/ims.apk;NODEXPO|4bc402c68b7a5b93659e4f210998b486b70371b8
 
 # IMS(VENDOR)
 vendor/bin/ims-dataservice-daemon
