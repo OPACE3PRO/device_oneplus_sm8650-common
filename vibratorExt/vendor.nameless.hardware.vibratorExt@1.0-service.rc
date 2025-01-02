@@ -1,0 +1,13 @@
+on boot
+    chown system system /sys/class/qcom-haptics/cl_vmax
+    chown system system /sys/class/qcom-haptics/fifo_vmax
+    chown system system /sys/class/qcom-haptics/vmax
+
+    write /sys/class/qcom-haptics/cl_vmax 8000
+    write /sys/class/qcom-haptics/fifo_vmax 9500
+    write /sys/class/qcom-haptics/vmax 2200
+
+service vendor.vibrator_ext-hal-1-0 /vendor/bin/hw/vendor.nameless.hardware.vibratorExt@1.0-service
+    class hal
+    user system
+    group system input

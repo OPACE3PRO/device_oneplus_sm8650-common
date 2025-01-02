@@ -1,0 +1,30 @@
+/*
+ * Copyright (C) 2022-2024 The Nameless-AOSP Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+cc_binary {
+    name: "vendor.nameless.hardware.vibratorExt@1.0-service",
+    init_rc: ["vendor.nameless.hardware.vibratorExt@1.0-service.rc"],
+    vintf_fragments: ["vendor.nameless.hardware.vibratorExt@1.0-service.xml"],
+    defaults: ["hidl_defaults"],
+    relative_install_path: "hw",
+    srcs: [
+        "Effects.cpp",
+        "VibratorExt.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder",
+        "libcutils",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "vendor.nameless.hardware.vibratorExt@1.0",
+    ],
+    static_libs: [
+        "libc++fs",
+    ],
+    proprietary: true,
+}
