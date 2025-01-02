@@ -1,0 +1,9 @@
+on boot
+    chown system system /sys/kernel/oplus_display/min_fps
+    chown system system /sys/kernel/oplus_display/seed
+    chown system system /sys/kernel/oplus_display/test_te
+
+service vendor.displayfeature-hal-1-0 /vendor/bin/hw/vendor.nameless.hardware.displayfeature@1.0-service
+    class hal
+    user system
+    group system

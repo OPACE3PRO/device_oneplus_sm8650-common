@@ -115,6 +115,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery
 
+# Battery
+PRODUCT_PACKAGES += \
+    vendor.nameless.hardware.battery@1.0-service
+
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.stats-V1-ndk.vendor \
@@ -195,6 +199,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
+
+# DisplayFeature
+PRODUCT_PACKAGES += \
+    vendor.nameless.hardware.displayfeature@1.0-service
 
 # DRM
 PRODUCT_PACKAGES += \

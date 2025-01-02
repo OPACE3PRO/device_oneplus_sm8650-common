@@ -42,5 +42,9 @@ ril.subscription.types=NV,RUIM
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
+# Touch gesture
+ro.nameless.feature.touch_gesture.bit=78068
+ro.nameless.feature.touch_gesture.oplus=true
+
 # Vendor
 ro.vendor.qti.va_aosp.support=1
