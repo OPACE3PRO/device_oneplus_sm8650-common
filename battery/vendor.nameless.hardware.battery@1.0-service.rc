@@ -1,0 +1,11 @@
+on boot
+    chown system system /proc/wireless/enable_rx
+    chown system system /proc/wireless/enable_tx
+    chown system system /proc/wireless/user_sleep_mode
+    chown system system /sys/class/oplus_chg/battery/mmi_charging_enable
+    chown system system /sys/class/oplus_chg/battery/voocchg_ing
+
+service vendor.battery-hal-1-0 /vendor/bin/hw/vendor.nameless.hardware.battery@1.0-service
+    class hal
+    user system
+    group system

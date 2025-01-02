@@ -1,0 +1,30 @@
+/*
+ * Copyright (C) 2022 The Nameless-AOSP Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+Common_CFlags = ["-Wall"]
+Common_CFlags += ["-Werror"]
+Common_CFlags += ["-Wno-unused-parameter"]
+
+cc_binary {
+    name: "vendor.nameless.hardware.battery@1.0-service",
+    init_rc: ["vendor.nameless.hardware.battery@1.0-service.rc"],
+    vintf_fragments: ["vendor.nameless.hardware.battery@1.0-service.xml"],
+    defaults: ["hidl_defaults"],
+    relative_install_path: "hw",
+    cflags: Common_CFlags,
+    srcs: [
+        "Battery.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+        "vendor.nameless.hardware.battery@1.0",
+    ],
+    proprietary: true,
+}
