@@ -47,12 +47,10 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl \
     android.hardware.audio.common-V1-ndk.vendor \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.sounddose-vendor-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
-    audio.primary.pineapple \
     audio.r_submix.default \
     audio.usb.default \
     audioadsprpcd \
@@ -66,8 +64,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libsndcardparser \
     libtinycompress \
-    libvolumelistener \
-    sound_trigger.primary.pineapple
+    libvolumelistener
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
 AUDIO_PAL_DIR := hardware/qcom-caf/sm8650/audio/pal
@@ -345,9 +342,7 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd-V1-ndk.vendor \
-    libloc_net_iface \
-    libloc_net_iface.vendor
+    android.system.net.netd-V1-ndk.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
