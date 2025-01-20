@@ -518,6 +518,9 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal-V1-ndk.vendor \
     android.hardware.thermal@2.0.vendor
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+
 $(call soong_config_set,qti_thermal,netlink,true)
 
 # Touch
