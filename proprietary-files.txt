@@ -61,7 +61,6 @@ vendor/lib64/libloadalgo_stub.so
 odm/lib/rfsa/adsp/aiboost/signed/libQnnHtpV75Skel.so
 odm/lib/rfsa/adsp/aiboost/signed/libaiboostubwc_skel.so
 odm/lib/rfsa/adsp/aiboost/unsigned/libQnnHtpV75Skel.so
-odm/lib/rfsa/adsp/capi_opve_v2_0.so
 odm/lib/rfsa/adsp/capi_v3_oprec.so
 odm/lib/rfsa/adsp/libarc_htp_driver_skel.so
 odm/lib/rfsa/adsp/libCalculator_skel.so
@@ -70,7 +69,6 @@ odm/lib/rfsa/adsp/libktveffect.so
 odm/lib/rfsa/adsp/libQnnHtpV75.so
 odm/lib/rfsa/adsp/libQnnHtpV75Skel.so
 odm/lib/rfsa/adsp/libQnnSaver.so
-odm/lib/rfsa/adsp/libsixth_rx_v3_5_21.so
 odm/lib/rfsa/adsp/libSnpeHtpV75Skel.so
 odm/lib/rfsa/adsp/nlc_bgth_v1_5.so
 vendor/lib/rfsa/adsp/chre_qsh_shim.so
@@ -179,8 +177,6 @@ odm/vendor/firmware/antdtx.b08
 odm/vendor/firmware/antdtx.mdt
 
 # Audio
-odm/lib64/lib_lvacfs.so
-odm/lib64/liblvacfs_wrapper.so
 odm/lib64/libtfa98xx.so
 vendor/bin/qsap_voiceui
 vendor/etc/models/acd/environment.eai
@@ -299,8 +295,6 @@ odm/etc/camera/ancsegbase/model.data
 odm/etc/camera/asd/class.dlc
 odm/etc/camera/asd/detect.dlc
 odm/etc/camera/ashdr/ncf_pack.ncf
-odm/etc/camera/basictone/lmt/LMTLut0
-odm/etc/camera/basictone/lmt/LMTLut1
 odm/etc/camera/basictone/lmt/SCLut0
 odm/etc/camera/basictone/lmt/SCLut1
 odm/etc/camera/basictone/lmt/SCLut2
@@ -317,9 +311,6 @@ odm/etc/camera/basictone/odt/ODT_Video
 odm/etc/camera/basictone/setting/Ditherout
 odm/etc/camera/basictone/setting/FromXml
 odm/etc/camera/basictone/setting/SimTool.ini
-odm/etc/camera/basictone/setting_dolby/Ditherout
-odm/etc/camera/basictone/setting_dolby/FromXml
-odm/etc/camera/basictone/setting_dolby/SimTool.ini
 odm/etc/camera/basictone/vig/VigTab_Main
 odm/etc/camera/basictone/vig/VigTab_Tele
 odm/etc/camera/basictone/vig/VigTab_UTele
@@ -328,24 +319,6 @@ odm/etc/camera/camera_engmode.xml
 odm/etc/camera/capture_bokeh_params.json
 odm/etc/camera/capture_lutportrait_params.json
 odm/etc/camera/capture_neonportrait_params.json
-odm/etc/camera/cfr_bin/CFR_imx355.bin
-odm/etc/camera/cfr_bin/CFR_imx890.bin
-odm/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin
-odm/etc/camera/cfr_bin/CFR_s5k3p9.bin
-odm/etc/camera/config/camera_unit_config
-odm/etc/camera/config/camera_unit_feature_config.protobuf
-odm/etc/camera/config/imx355
-odm/etc/camera/config/imx890
-odm/etc/camera/config/oplus_camera_algo_switch_config
-odm/etc/camera/config/oplus_camera_aps_config
-odm/etc/camera/config/oplus_camera_config
-odm/etc/camera/config/oplus_camera_preview_decision_config.json
-odm/etc/camera/config/oplus_preview_decision_params.json
-odm/etc/camera/config/ov02b
-odm/etc/camera/config/pickref_params.xml
-odm/etc/camera/config/s5k3p9
-odm/etc/camera/config/sr_params.xml
-odm/etc/camera/config/video_beauty_default_config
 odm/etc/camera/distortionParams.bin
 odm/etc/camera/dng/ColorMatrix1_imx581_2.txt
 odm/etc/camera/dng/ColorMatrix1_imx709_3.txt
@@ -363,7 +336,6 @@ odm/etc/camera/dng/ToneCurve_imx581_2.txt
 odm/etc/camera/dng/ToneCurve_imx709_3.txt
 odm/etc/camera/dng/ToneCurve_imx890_0.txt
 odm/etc/camera/eis_camera.vcfg
-odm/etc/camera/facesr_hd_composite_ff_ref_4.3.19_qcom8650_qnn_segqnn.model
 odm/etc/camera/fb_default
 odm/etc/camera/fb_model/000.png
 odm/etc/camera/fb_model/000_pre.bin
@@ -851,23 +823,7 @@ odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
 odm/etc/vintf/manifest/manifest_oplus_sendextcamcmd.xml
 odm/lib/vendor.oplus.hardware.extcamera@1.0.so
 odm/lib64/camera/awb_parameter_default.bin
-odm/lib64/camera/awb_parameter_qtech_s5k3p9.bin
-odm/lib64/camera/awb_parameter_sunny_imx355.bin
-odm/lib64/camera/awb_parameter_sunny_imx890.bin
-odm/lib64/camera/awb_parameter_sunny_ov02b.bin
-odm/lib64/camera/com.qti.sensor.imx355.so
-odm/lib64/camera/com.qti.sensor.imx890.so
-odm/lib64/camera/com.qti.sensor.ov02b.so
-odm/lib64/camera/com.qti.sensor.s5k3p9.so
-odm/lib64/camera/com.qti.sensormodule.qtech_s5k3p9.bin
-odm/lib64/camera/com.qti.sensormodule.sunny_imx355.bin
-odm/lib64/camera/com.qti.sensormodule.sunny_imx890.bin
-odm/lib64/camera/com.qti.sensormodule.sunny_ov02b.bin
 odm/lib64/camera/com.qti.tuned.default.bin
-odm/lib64/camera/com.qti.tuned.qtech_s5k3p9.bin
-odm/lib64/camera/com.qti.tuned.sunny_imx355.bin
-odm/lib64/camera/com.qti.tuned.sunny_imx890.bin
-odm/lib64/camera/com.qti.tuned.sunny_ov02b.bin
 odm/lib64/camera/components/com.oplus.node.mvgsat.so
 odm/lib64/camera/components/com.oplus.node.preview.so
 odm/lib64/camera/components/com.oplus.node.sstabdefer.so
@@ -935,11 +891,6 @@ odm/lib64/libSnpeHta.so
 odm/lib64/libSnpeHtpPrepare.so
 odm/lib64/libSnpeHtpV75Stub.so
 odm/lib64/libSuperTextWrapper.so
-odm/lib64/libVDBayerHDR.so
-odm/lib64/libVDExternal.so
-odm/lib64/libVDPostureDetection.so
-odm/lib64/libVDSuperPhotoAPI.so
-odm/lib64/libVDUpScale.so
 odm/lib64/libWaterMark.so
 odm/lib64/libXDocProcessSDK.so
 odm/lib64/libYTCommon.so
@@ -1360,16 +1311,8 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger
-odm/firmware/fastchg/23814/charging_hyper_mode_config.txt
-odm/firmware/fastchg/23814/silicon_1_charging_hyper_mode_config.txt
 odm/firmware/fastchg/bms_heating_config.txt
-odm/firmware/fastchg/charge_time_config.csv
 odm/firmware/fastchg/charging_thermal_config_default.txt
-odm/firmware/fastchg/silicon_1_batt_si_loss_config_table.txt
-odm/firmware/fastchg/silicon_1_bms_heating_config.txt
-odm/firmware/fastchg/silicon_1_charge_time_config.csv
-odm/firmware/fastchg/silicon_1_charging_thermal_config_default.txt
-odm/firmware/fastchg/silicon_1_smart_chg_config_table.txt
 vendor/etc/charger_fw_fstab.qti
 
 # CNE
@@ -1579,33 +1522,6 @@ vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display (Pixelworks)
-odm/bin/hw/vendor.pixelworks.hardware.feature-service
-odm/bin/irisConfig
-odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc
-odm/etc/vintf/manifest/vendor.pixelworks.hardware.display-service.xml
-odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature-service.xml
-odm/lib64/libpwirisIoctlWrapper.so
-odm/lib64/libpwirisPCS.so
-odm/lib64/libpwiriscalibrate.so
-odm/lib64/libpwirisfeature.so
-odm/lib64/libpwirisfeaturehal.so
-odm/lib64/libpwirishalwrapper.so
-odm/lib64/libpwirispq.so
-odm/lib64/libpwirisservicei7.so
-odm/lib64/libpwirisservicei7p.so
-odm/lib64/libpwirisservicesi.so
-odm/lib64/libpwsoftirisPCS.so
-odm/lib64/vendor.pixelworks.hardware.display-V1-ndk.so
-odm/lib64/vendor.pixelworks.hardware.display-impl-i7.so
-odm/lib64/vendor.pixelworks.hardware.display-impl-i7p.so
-odm/lib64/vendor.pixelworks.hardware.display-impl-si.so
-odm/lib64/vendor.pixelworks.hardware.display-translate-V2-ndk.so
-odm/lib64/vendor.pixelworks.hardware.display@1.0.so
-odm/lib64/vendor.pixelworks.hardware.display@1.1.so
-odm/lib64/vendor.pixelworks.hardware.display@1.2.so
-odm/lib64/vendor.pixelworks.hardware.feature-V1-ndk.so
-odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
-odm/lib64/vendor.pixelworks.hardware.feature@1.1.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libpwirisfeature.so
@@ -1795,28 +1711,6 @@ odm/lib64/vendor.oplus.hardware.olc2-V2-ndk.so
 
 # Fingerprint - From Oneplus 12
 odm/lib64/libclstc_fod_color.so|6c566c31f1878193eb0d659090da46fcb0f67ba4
-
-# Fingerprint firmware
-odm/vendor/firmware/uff_gx.b00
-odm/vendor/firmware/uff_gx.b01
-odm/vendor/firmware/uff_gx.b02
-odm/vendor/firmware/uff_gx.b03
-odm/vendor/firmware/uff_gx.b04
-odm/vendor/firmware/uff_gx.b05
-odm/vendor/firmware/uff_gx.b06
-odm/vendor/firmware/uff_gx.b07
-odm/vendor/firmware/uff_gx.b08
-odm/vendor/firmware/uff_gx.mdt
-odm/vendor/firmware/uff_spi.b00
-odm/vendor/firmware/uff_spi.b01
-odm/vendor/firmware/uff_spi.b02
-odm/vendor/firmware/uff_spi.b03
-odm/vendor/firmware/uff_spi.b04
-odm/vendor/firmware/uff_spi.b05
-odm/vendor/firmware/uff_spi.b06
-odm/vendor/firmware/uff_spi.b07
-odm/vendor/firmware/uff_spi.b08
-odm/vendor/firmware/uff_spi.mdt
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service-qti
@@ -2502,7 +2396,6 @@ vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
 vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk.so
 vendor/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
-vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.data.connection@1.0.so
 vendor/lib64/vendor.qti.hardware.data.connection@1.1.so
 vendor/lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so
@@ -2795,9 +2688,7 @@ vendor/lib64/libtaautoload.so
 vendor/lib64/libtrustedapploader.so
 
 # UFS
-odm/firmware/ufs/MICRON-MT001TAYAX8U40.bin
 odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh
-odm/firmware/ufs/SAMSUNG-KLUFG4NHHB-F0G1.bin
 odm/firmware/ufs/SKhynix-HN8T174EJKX075.bin
 odm/firmware/ufs/SKhynix-HN8T274EJKX130.bin
 odm/firmware/ufs/SKhynix-HN8T374ZJKX141.bin
