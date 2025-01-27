@@ -477,8 +477,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/oplus \
     hardware/qcom-caf/common/libqti-perfd-client \
-    kernel/oneplus/sm8650 \
-    device/oneplus/corvette-kernel
+    kernel/oneplus/sm8650
 
 # Storage
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)

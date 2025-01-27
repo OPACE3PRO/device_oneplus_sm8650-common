@@ -8,7 +8,6 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 COMMON_PATH := device/oneplus/sm8650-common
-KERNEL_PATH := device/oneplus/corvette-kernel
 
 # A/B
 AB_OTA_UPDATER := true
@@ -126,8 +125,6 @@ KERNEL_LTO := none
 
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_NO_KERNEL_OVERRIDE := true
-
-TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.system_dlkm))
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
