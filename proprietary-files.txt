@@ -2690,6 +2690,9 @@ odm/firmware/ufs/SKhynix-HN8T274EJKX130.bin
 odm/firmware/ufs/SKhynix-HN8T374ZJKX141.bin
 odm/firmware/ufs/ufs_version_config.xml
 
+# Vibrator
+odm/lib64/libaacvibrator.so:vendor/lib64/libaacvibrator.so
+
 # Video
 vendor/lib64/libstreamparser.so
 vendor/lib64/libvideotxr.so
