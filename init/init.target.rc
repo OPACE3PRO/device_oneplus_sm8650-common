@@ -219,8 +219,8 @@ service fan_control_turn_off /vendor/bin/fan_service 0
 on property:vendor.post_boot.parsed=1
 
     # Uclamp tunings
-    setprop kernel.sched_util_clamp_min_rt_default 500
-    write /proc/sys/kernel/sched_util_clamp_min_rt_default 500
+    setprop kernel.sched_util_clamp_min_rt_default 0
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
 
     #top-app
     write /dev/cpuctl/top-app/cpu.uclamp.max max
