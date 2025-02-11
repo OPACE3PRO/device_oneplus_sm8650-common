@@ -344,14 +344,20 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "UclampTALatency",
+      "Duration": 3000,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "UclampTAMin",
-      "Duration": 1500,
+      "Duration": 3000,
       "Value": "50"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "UclampFGMin",
-      "Duration": 1500,
+      "Duration": 3000,
       "Value": "50"
     },
     {
@@ -411,7 +417,7 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUIdleTimer",
-      "Duration": 1500,
+      "Duration": 3000,
       "Value": "10000"
     },
     {
