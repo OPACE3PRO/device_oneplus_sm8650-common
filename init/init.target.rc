@@ -261,7 +261,7 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor schedutil
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor schedutil
-    write /proc/sys/kernel/sched_pelt_multiplier 2
+    write /proc/sys/kernel/sched_pelt_multiplier 1
     write /proc/sys/kernel/sched_schedstats 0
     write /sys/devices/system/cpu/cpufreq/policy0/schedutil/rate_limit_us 2000
     write /sys/devices/system/cpu/cpufreq/policy2/schedutil/rate_limit_us 2000
@@ -274,4 +274,4 @@ on property:vendor.post_boot.parsed=1
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
     swapon_all /vendor/etc/fstab.${ro.boot.hardware}
-    write /proc/sys/vm/swappiness 60
+    write /proc/sys/vm/swappiness 80
