@@ -33,4 +33,7 @@
 
     <!-- Whether to force enable multi resolution configuration for camera -->
     <bool name="config_forceMultiResolution">true</bool>
+
+    <!-- Slider vibrations fallbacks - set to true to vary amplitude in addition to duration -->
+    <bool name="config_sliderVibFallbackWaveform">true</bool>
 </resources>
