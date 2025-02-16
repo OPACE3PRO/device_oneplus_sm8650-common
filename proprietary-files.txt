@@ -2098,6 +2098,7 @@ odm/etc/nfc/libnfc-nci.conf_22877:vendor/etc/libnfc-nci.conf
 
 # OSENSE
 odm/lib64/libosenseaidlhalclient.so
+odm/lib64/libosensenativeproxy_client.so
 
 # OPLUS Performance
 odm/bin/hw/vendor-oplus-hardware-performance-V1-service
