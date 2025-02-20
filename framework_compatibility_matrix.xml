@@ -28,7 +28,7 @@
         <version>1</version>
         <interface>
             <name>ICommonDcsAidlHalService</name>
-            <instance>oplus</instance>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="aidl">
