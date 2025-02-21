@@ -1945,7 +1945,6 @@ vendor/lib64/libqtiidentitycredential.so
 
 # Kernel
 vendor/bin/init.kernel.post_boot-pineapple.sh
-vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qcom.class_core.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/system_dlkm_modprobe.sh
