@@ -46,29 +46,30 @@ SOONG_CONFIG_android_hardware_audio_run_64bit := true
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl \
-    android.hardware.audio.common-V1-ndk.vendor \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.sounddose-vendor-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
-    audio.primary.pineapple \
     audio.r_submix.default \
     audio.usb.default \
-    audioadsprpcd \
     libagmmixer \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
+    libaudiochargerlistener \
     libbatterylistener \
+    libfmpal \
+    libhfp_pal \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndcardparser \
     libtinycompress \
     libvolumelistener \
-    sound_trigger.primary.pineapple
+    sound_trigger.primary.pineapple \
+    vendor.qti.audio-adsprpc-service.rc
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
 AUDIO_PAL_DIR := hardware/qcom-caf/sm8650/audio/pal
@@ -176,46 +177,18 @@ OVERRIDE_DISABLE_DEXOPT_ALL := false
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator-V1-ndk.vendor \
-    android.hardware.graphics.composer3-V2-ndk.vendor \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     init.qti.display_boot.rc \
     init.qti.display_boot.sh \
-    libdisplayconfig.qti \
-    libdisplayconfig.system.qti \
-    libqdMetaData \
-    libqdMetaData.system \
-    libsdmcore \
-    libsdmutils \
-    libui.vendor \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.11.vendor \
-    vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor \
+    libgpu_tonemapper \
     vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.allocator@1.0.vendor \
-    vendor.qti.hardware.display.allocator@3.0.vendor \
-    vendor.qti.hardware.display.allocator@4.0.vendor \
     vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.composer3-V1-ndk \
-    vendor.qti.hardware.display.config-V1-ndk.vendor \
+    vendor.qti.hardware.display.composer-service.rc \
+    vendor.qti.hardware.display.composer-service.xml \
+    vendor.qti.hardware.display.composer3-V1-ndk.vendor \
     vendor.qti.hardware.display.config-V2-ndk.vendor \
-    vendor.qti.hardware.display.config-V3-ndk.vendor \
-    vendor.qti.hardware.display.config-V4-ndk.vendor \
-    vendor.qti.hardware.display.config-V5-ndk \
-    vendor.qti.hardware.display.config-V5-ndk.vendor \
-    vendor.qti.hardware.display.config-V6-ndk.vendor \
-    vendor.qti.hardware.display.config-V7-ndk.vendor \
-    vendor.qti.hardware.display.config-V8-ndk.vendor \
-    vendor.qti.hardware.display.config-V9-ndk.vendor \
-    vendor.qti.hardware.display.config-V10-ndk.vendor \
     vendor.qti.hardware.display.demura-service \
-    vendor.qti.hardware.display.demura-V1-ndk \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.qti.hardware.display.postproc-V1-ndk.vendor
+    vendor.qti.hardware.display.demura-V1-ndk.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
@@ -444,7 +417,7 @@ PRODUCT_PACKAGES += \
 # QCOM
 TARGET_BOARD_PLATFORM := pineapple
 
-# QMI
+# QTI fwk-detect
 PRODUCT_PACKAGES += \
     libcurl.vendor \
     libjson \
@@ -469,6 +442,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.sim-V2-ndk.vendor \
     android.hardware.radio.voice-V2-ndk.vendor \
     librmnetctl
+
+# QSPA
+PRODUCT_PACKAGES += \
+    vendor.qti.qspa-service
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -656,7 +633,6 @@ PRODUCT_PACKAGES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    android.media.audio.common.types-V3-cpp \
     libnl \
     libpng.vendor \
     libwfdaac_vendor
