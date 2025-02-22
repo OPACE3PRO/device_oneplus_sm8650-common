@@ -40,6 +40,22 @@
         </interface>
     </hal>
     <hal format="aidl">
+        <name>vendor.oplus.hardware.displaycolorfeature</name>
+        <version>1</version>
+        <interface>
+            <name>IDisplayColorFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.oplus.hardware.displaypanelfeature</name>
+        <version>1</version>
+        <interface>
+            <name>IDisplayPanelFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
         <name>vendor.oplus.hardware.stability.oplus_project</name>
         <version>2</version>
         <interface>
