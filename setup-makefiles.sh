@@ -23,6 +23,72 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function vendor_imports() {
+    cat <<EOF >>"$1"
+		"device/oneplus/sm8650-common",
+		"hardware/qcom-caf/sm8650",
+		"hardware/qcom-caf/wlan",
+		"hardware/oplus",
+		"vendor/qcom/opensource/commonsys/display",
+		"vendor/qcom/opensource/commonsys-intf/display",
+		"vendor/qcom/opensource/dataservices",
+EOF
+}
+
+function lib_to_package_fixup_vendor_variants() {
+    if [ "$2" != "vendor" ]; then
+        return 1
+    fi
+
+    case "$1" in
+        com.qualcomm.qti.dpm.api@1.0 | \
+            libarcsoft_triple_sat | \
+            libarcsoft_triple_zoomtranslator | \
+            libdualcam_optical_zoom_control | \
+            libdualcam_video_optical_zoom | \
+            libhwconfigurationutil | \
+            libtriplecam_optical_zoom_control | \
+            libtriplecam_video_optical_zoom | \
+            libolc_vnd | \
+            vendor.oplus.hardware.camera_rfi-V1-ndk | \
+            vendor.oplus.hardware.cammidasservice-V1-ndk | \
+            vendor.oplus.hardware.communicationcenter-V2-ndk | \
+            vendor.oplus.hardware.displaycolorfeature-V1-ndk | \
+            vendor.oplus.hardware.displaypanelfeature-V1-ndk | \
+            vendor.pixelworks.hardware.display@1.0 | \
+            vendor.pixelworks.hardware.display@1.1 | \
+            vendor.pixelworks.hardware.display@1.2 | \
+            vendor.pixelworks.hardware.feature@1.0 | \
+            vendor.pixelworks.hardware.feature@1.1 | \
+            vendor.pixelworks.hardware.feature-V1-ndk | \
+            vendor.qti.diaghal@1.0 | \
+            vendor.qti.hardware.dpmservice@1.0 | \
+            vendor.qti.hardware.dpmaidlservice-V1-ndk | \
+            vendor.qti.hardware.qccsyshal@1.0 | \
+            vendor.qti.hardware.qccsyshal@1.1 | \
+            vendor.qti.hardware.qccsyshal@1.2 | \
+            vendor.qti.hardware.wifidisplaysession@1.0 | \
+            vendor.qti.imsrtpservice@3.0 | \
+            vendor.qti.imsrtpservice@3.1 | \
+            vendor.qti.ImsRtpService-V1-ndk | \
+            vendor.qti.qccvndhal_aidl-V1-ndk)
+            echo "$1_vendor"
+            ;;
+        libagmclient | \
+            libpalclient | \
+            libwpa_client) ;;
+        *)
+            return 1
+            ;;
+    esac
+}
+
+function lib_to_package_fixup() {
+    lib_to_package_fixup_clang_rt_ubsan_standalone "$1" ||
+        lib_to_package_fixup_proto_3_9_1 "$1" ||
+        lib_to_package_fixup_vendor_variants "$@"
+}
+
 # Initialize the helper for common
 setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
 

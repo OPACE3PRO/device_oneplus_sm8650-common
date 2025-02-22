@@ -68,8 +68,6 @@ function blob_fixup() {
     case "${1}" in
          odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff)
             grep -q "libshims_aidl_fingerprint_v3.oplus.so" "${2}" || "${PATCHELF}" --add-needed "libshims_aidl_fingerprint_v3.oplus.so" "${2}"
-            grep -q android.hardware.biometrics.fingerprint-V4-ndk.so "${2}" || "$PATCHELF" --replace-needed "android.hardware.biometrics.fingerprint-V3-ndk.so" "android.hardware.biometrics.fingerprint-V4-ndk.so" "${2}"
-            grep -q android.hardware.biometrics.common-V4-ndk.so "${2}" || "$PATCHELF" --replace-needed "android.hardware.biometrics.common-V3-ndk.so" "android.hardware.biometrics.common-V4-ndk.so" "${2}"
             ;;
         odm/etc/camera/CameraHWConfiguration.config)
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
@@ -79,6 +77,13 @@ function blob_fixup() {
             ;;
         odm/lib64/libCOppLceTonemapAPI.so|odm/lib64/libCS.so|odm/lib64/libSuperRaw.so|odm/lib64/libYTCommon.so|odm/lib64/libyuv2.so)
             "${PATCHELF_0_17_2}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+            ;;
+        odm/lib64/camera.device@3.3-impl_odm.so|odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl.so|odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl.so|odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl.so|odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl.so)
+            "${PATCHELF}" --replace-needed "camera.device@3.2-impl.so" "camera.device@3.2-impl_odm.so" "${2}"
+            "${PATCHELF}" --replace-needed "camera.device@3.3-impl.so" "camera.device@3.3-impl_odm.so" "${2}"
+            ;;
+        odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so|vendor/lib64/libcwb_qcom_aidl.so)
+            grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"

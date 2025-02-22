@@ -58,9 +58,9 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libloadalgo_stub.so
 
 # ADSP modules
-odm/lib/rfsa/adsp/aiboost/signed/libQnnHtpV75Skel.so
-odm/lib/rfsa/adsp/aiboost/signed/libaiboostubwc_skel.so
-odm/lib/rfsa/adsp/aiboost/unsigned/libQnnHtpV75Skel.so
+odm/lib/rfsa/adsp/aiboost/signed/libQnnHtpV75Skel.so;MODULE_SUFFIX=.aiboost
+odm/lib/rfsa/adsp/aiboost/signed/libaiboostubwc_skel.so;MODULE_SUFFIX=.aiboost
+odm/lib/rfsa/adsp/aiboost/unsigned/libQnnHtpV75Skel.so;MODULE_SUFFIX=.unsigned.aiboost
 odm/lib/rfsa/adsp/capi_v3_oprec.so
 odm/lib/rfsa/adsp/libarc_htp_driver_skel.so
 odm/lib/rfsa/adsp/libCalculator_skel.so
@@ -85,7 +85,7 @@ vendor/lib/rfsa/adsp/libqvr_3dof_tracker_skel.so
 vendor/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so
 vendor/lib/rfsa/adsp/libqvr_dsp_driver_skel.so
 vendor/lib/rfsa/adsp/libtracker_6dof_skel_8450.so
-vendor/lib/rfsa/adsp/nearby.napp_header
+vendor/lib/rfsa/adsp/nearby.napp_header;MODULE_SUFFIX=.napp_header
 vendor/lib/rfsa/adsp/nearby.so
 vendor/lib64/bm4a68v08s12n52.bin
 vendor/lib64/bm4a68v08s12n53.bin
@@ -137,29 +137,31 @@ vendor/lib64/bm4a73v08s12n59.bin
 vendor/lib64/bm4a73v08s12n60.bin
 vendor/lib64/bm4a73v08s12n61.bin
 vendor/lib64/bm4a73v08s12n62.bin
-vendor/lib64/rfs/dsp/libQ6MSFR_manager_skel.so
-vendor/lib64/rfs/dsp/libVppAisQnnHtp.so
-vendor/lib64/rfs/dsp/libVppFrcQnnHtp.so
-vendor/lib64/rfs/dsp/libapn_dsp_skel.so
-vendor/lib64/rfs/dsp/libbitml_nsp_75na_skel.so
-vendor/lib64/rfs/dsp/libdpp_engine_skel.so
-vendor/lib64/rfs/dsp/libdspCV_skel.so
-vendor/lib64/rfs/dsp/libevadsp.so
-vendor/lib64/rfs/dsp/libfastcvadsp.so
-vendor/lib64/rfs/dsp/libfastcvdsp_skel.so
-vendor/lib64/rfs/dsp/libhdr_skel.so
-vendor/lib64/rfs/dsp/libmobilenet_dsp_frc.so
-vendor/lib64/rfs/dsp/libmobilenet_dsp_frc_networks.so
-vendor/lib64/rfs/dsp/libnsp_ipc_cdsp_skel.so
-vendor/lib64/rfs/dsp/libosie_skel.so
-vendor/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so
-vendor/lib64/rfs/dsp/libscveT2T_skel.so
-vendor/lib64/rfs/dsp/libvpp_ais.so
-vendor/lib64/rfs/dsp/libvpp_ais_networks.so
-vendor/lib64/rfs/dsp/libvpp_frc.so
-vendor/lib64/rfs/dsp/libvpp_svc_skel.so
-vendor/lib64/rfs/dsp/libvpp_vqa_networks.so
-vendor/lib64/rfs/dsp/libworker_pool.so
+vendor/lib64/rfs/dsp/libQ6MSFR_manager_skel.so:vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libQ6MSFR_manager_skel.so
+vendor/lib64/rfs/dsp/libVppAisQnnHtp.so:vendor/lib/rfsa/adsp/libVppAisQnnHtp.so;SYMLINK=vendor/lib64/rfs/dsp/libVppAisQnnHtp.so
+vendor/lib64/rfs/dsp/libVppFrcQnnHtp.so:vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so;SYMLINK=vendor/lib64/rfs/dsp/libVppFrcQnnHtp.so
+vendor/lib64/rfs/dsp/libapn_dsp_skel.so:vendor/lib/rfsa/adsp/libapn_dsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libapn_dsp_skel.so
+vendor/lib64/rfs/dsp/libbitml_nsp_73nb_skel.so:vendor/lib/rfsa/adsp/libbitml_nsp_73nb_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libbitml_nsp_73nb_skel.so
+vendor/lib64/rfs/dsp/libbitml_nsp_75na_skel.so:vendor/lib/rfsa/adsp/libbitml_nsp_75na_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libbitml_nsp_75na_skel.so
+vendor/lib64/rfs/dsp/libdpp_engine_skel.so:vendor/lib/rfsa/adsp/libdpp_engine_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libdpp_engine_skel.so
+vendor/lib64/rfs/dsp/libdspCV_skel.so:vendor/lib/rfsa/adsp/libdspCV_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libdspCV_skel.so
+vendor/lib64/rfs/dsp/libevadsp.so:vendor/lib/rfsa/adsp/libevadsp.so;SYMLINK=vendor/lib64/rfs/dsp/libevadsp.so
+vendor/lib64/rfs/dsp/libfastcvadsp.so:vendor/lib/rfsa/adsp/libfastcvadsp.so;SYMLINK=vendor/lib64/rfs/dsp/libfastcvadsp.so
+vendor/lib64/rfs/dsp/libfastcvdsp_skel.so:vendor/lib/rfsa/adsp/libfastcvdsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libfastcvdsp_skel.so
+vendor/lib64/rfs/dsp/libhdr_skel.so:vendor/lib/rfsa/adsp/libhdr_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libhdr_skel.so
+vendor/lib64/rfs/dsp/libhme_dsp_skel.so:vendor/lib/rfsa/adsp/libhme_dsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libhme_dsp_skel.so
+vendor/lib64/rfs/dsp/libmobilenet_dsp_frc.so:vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so;SYMLINK=vendor/lib64/rfs/dsp/libmobilenet_dsp_frc.so
+vendor/lib64/rfs/dsp/libmobilenet_dsp_frc_networks.so:vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so;SYMLINK=vendor/lib64/rfs/dsp/libmobilenet_dsp_frc_networks.so
+vendor/lib64/rfs/dsp/libnsp_ipc_cdsp_skel.so:vendor/lib/rfsa/adsp/libnsp_ipc_cdsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libnsp_ipc_cdsp_skel.so
+vendor/lib64/rfs/dsp/libosie_skel.so:vendor/lib/rfsa/adsp/libosie_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libosie_skel.so
+vendor/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so:vendor/lib/rfsa/adsp/libqsegnetengine_dsp_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libqsegnetengine_dsp_skel.so
+vendor/lib64/rfs/dsp/libscveT2T_skel.so:vendor/lib/rfsa/adsp/libscveT2T_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libscveT2T_skel.so
+vendor/lib64/rfs/dsp/libvpp_ais.so:vendor/lib/rfsa/adsp/libvpp_ais.so;SYMLINK=vendor/lib64/rfs/dsp/libvpp_ais.so
+vendor/lib64/rfs/dsp/libvpp_ais_networks.so:vendor/lib/rfsa/adsp/libvpp_ais_networks.so;SYMLINK=vendor/lib64/rfs/dsp/libvpp_ais_networks.so
+vendor/lib64/rfs/dsp/libvpp_frc.so:vendor/lib/rfsa/adsp/libvpp_frc.so;SYMLINK=vendor/lib64/rfs/dsp/libvpp_frc.so
+vendor/lib64/rfs/dsp/libvpp_svc_skel.so:vendor/lib/rfsa/adsp/libvpp_svc_skel.so;SYMLINK=vendor/lib64/rfs/dsp/libvpp_svc_skel.so
+vendor/lib64/rfs/dsp/libvpp_vqa_networks.so:vendor/lib/rfsa/adsp/libvpp_vqa_networks.so;SYMLINK=vendor/lib64/rfs/dsp/libvpp_vqa_networks.so
+vendor/lib64/rfs/dsp/libworker_pool.so:vendor/lib/rfsa/adsp/libworker_pool.so;SYMLINK=vendor/lib64/rfs/dsp/libworker_pool.so
 
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
@@ -185,7 +187,6 @@ vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
 vendor/etc/seccomp_policy/qsap_voiceui.policy
 vendor/lib64/hw/audio.primary.pineapple.so
-vendor/lib64/hw/sound_trigger.primary.pineapple.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libEvrcSwCodec.so
@@ -201,7 +202,6 @@ vendor/lib64/libar-gpr.so
 vendor/lib64/libarmemlog.so
 -vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudiochargerlistener.so
 vendor/lib64/libaudiofeaturestats.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
@@ -211,8 +211,6 @@ vendor/lib64/libcustomva_intf.so
 vendor/lib64/libdsd2pcm.so
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
-vendor/lib64/libfmpal.so
-vendor/lib64/libhfp_pal.so
 vendor/lib64/libhotword_intf.so
 vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/liblx-ar_util.so
@@ -249,7 +247,6 @@ vendor/lib64/lib_bt_aptx.so
 vendor/lib64/lib_bt_ble.so
 vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbtnv.so
-vendor/lib64/libchrome.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
 vendor/lib64/vendor.qti.hardware.bttpi-V3-ndk.so
@@ -698,48 +695,48 @@ odm/etc/camera/mwStereoParams.bin
 odm/etc/camera/neon_yuv_LUT_64.bin
 odm/etc/camera/oplus_eis_camera.vcfg
 odm/etc/camera/pfb_bin/BeardSharp.bin
-odm/etc/camera/pfb_bin/BeardSharp.frag
-odm/etc/camera/pfb_bin/BeardSharp.vert
-odm/etc/camera/pfb_bin/PreAddSRBinary.bin
-odm/etc/camera/pfb_bin/PreCalVarBinary.bin
-odm/etc/camera/pfb_bin/PreCalcSRBinary.bin
-odm/etc/camera/pfb_bin/PreCalculateOutTex.bin
-odm/etc/camera/pfb_bin/PreDepouchBinary.bin
-odm/etc/camera/pfb_bin/PreEyeMeanBinary.bin
-odm/etc/camera/pfb_bin/PreGetHpMaskHor.bin
-odm/etc/camera/pfb_bin/PreGetHpMaskVer.bin
-odm/etc/camera/pfb_bin/PreGetInitHpMask.bin
-odm/etc/camera/pfb_bin/PreHighPassBinary.bin
-odm/etc/camera/pfb_bin/PreHighPassPreBinary.bin
-odm/etc/camera/pfb_bin/PreHoriFilterBinary.bin
-odm/etc/camera/pfb_bin/PreMakeupBinary.bin
-odm/etc/camera/pfb_bin/PreMakeupMultiFaceBinary.bin
-odm/etc/camera/pfb_bin/PreMakeupSingleFaceBinary.bin
-odm/etc/camera/pfb_bin/PreMixImageBinary.bin
-odm/etc/camera/pfb_bin/PreMorphBinary.bin
-odm/etc/camera/pfb_bin/PreOnlywhitenBinary.bin
-odm/etc/camera/pfb_bin/PreSaveMaskBinary.bin
-odm/etc/camera/pfb_bin/PreSkintuneBinary.bin
-odm/etc/camera/pfb_bin/PreSkintuneMRTBinary.bin
-odm/etc/camera/pfb_bin/PreSobelSumTwoBinary.bin
-odm/etc/camera/pfb_bin/PreSobelTwoBinary.bin
-odm/etc/camera/pfb_bin/PreSobelUpdateTwoBinary.bin
-odm/etc/camera/pfb_bin/PreStitchFacesAnd2Cpu.bin
-odm/etc/camera/pfb_bin/PreSurfaceBlurBinary.bin
-odm/etc/camera/pfb_bin/PreVertFilterBinary.bin
-odm/etc/camera/pfb_bin/PreVertSurBinary.bin
+odm/etc/camera/pfb_bin/BeardSharp.frag;MODULE_SUFFIX=.frag
+odm/etc/camera/pfb_bin/BeardSharp.vert;MODULE_SUFFIX=.vert
+odm/etc/camera/pfb_bin/PreAddSRBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreCalVarBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreCalcSRBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreCalculateOutTex.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreDepouchBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreEyeMeanBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreGetHpMaskHor.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreGetHpMaskVer.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreGetInitHpMask.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreHighPassBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreHighPassPreBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreHoriFilterBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreMakeupBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreMakeupMultiFaceBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreMakeupSingleFaceBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreMixImageBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreMorphBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreOnlywhitenBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreSaveMaskBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreSkintuneBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreSkintuneMRTBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreSobelSumTwoBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreSobelTwoBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreSobelUpdateTwoBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreStitchFacesAnd2Cpu.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreSurfaceBlurBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreVertFilterBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/PreVertSurBinary.bin;MODULE_SUFFIX=.pfb_bin
 odm/etc/camera/pfb_bin/SkinCalcHue.bin
-odm/etc/camera/pfb_bin/SkinCalcHue.frag
-odm/etc/camera/pfb_bin/SkinCalcHue.vert
+odm/etc/camera/pfb_bin/SkinCalcHue.frag;MODULE_SUFFIX=.frag
+odm/etc/camera/pfb_bin/SkinCalcHue.vert;MODULE_SUFFIX=.vert
 odm/etc/camera/pfb_bin/SkinColorBlur.bin
-odm/etc/camera/pfb_bin/SkinColorBlur.frag
-odm/etc/camera/pfb_bin/SkinColorBlur.vert
+odm/etc/camera/pfb_bin/SkinColorBlur.frag;MODULE_SUFFIX=.frag
+odm/etc/camera/pfb_bin/SkinColorBlur.vert;MODULE_SUFFIX=.vert
 odm/etc/camera/pfb_bin/SkinColorUnify.bin
-odm/etc/camera/pfb_bin/SkinColorUnify.frag
-odm/etc/camera/pfb_bin/SkinColorUnify.vert
+odm/etc/camera/pfb_bin/SkinColorUnify.frag;MODULE_SUFFIX=.frag
+odm/etc/camera/pfb_bin/SkinColorUnify.vert;MODULE_SUFFIX=.vert
 odm/etc/camera/pfb_bin/SkinHueUnify.bin
-odm/etc/camera/pfb_bin/SkinHueUnify.frag
-odm/etc/camera/pfb_bin/SkinHueUnify.vert
+odm/etc/camera/pfb_bin/SkinHueUnify.frag;MODULE_SUFFIX=.frag
+odm/etc/camera/pfb_bin/SkinHueUnify.vert;MODULE_SUFFIX=.vert
 odm/etc/camera/pfb_bin/snapAdjustProgramBinary.bin
 odm/etc/camera/pfb_bin/snapBoxFilterBinary.bin
 odm/etc/camera/pfb_bin/snapCalcSumProgramBinary.bin
@@ -771,13 +768,13 @@ odm/etc/camera/pfb_bin/snapSurfaceBlurBinary.bin
 odm/etc/camera/pfb_bin/snapTex2HWBinary.bin
 odm/etc/camera/pfb_bin/snapYUV420sp2RGBBinary.bin
 odm/etc/camera/pfb_bin/snapseparateYUV2RGBBinary.bin
-odm/etc/camera/pfb_bin/ThirdPartyPreHoriFilterBinary.bin
-odm/etc/camera/pfb_bin/ThirdPartyPreMorphBinary.bin
-odm/etc/camera/pfb_bin/ThirdPartyPreOnlywhitenBinary.bin
-odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneBinary.bin
-odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneMRTBinary.bin
-odm/etc/camera/pfb_bin/ThirdPartyPreVertFilterBinary.bin
-odm/etc/camera/pfb_bin/ThirdPartyPreVertSurBinary.bin
+odm/etc/camera/pfb_bin/ThirdPartyPreHoriFilterBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/ThirdPartyPreMorphBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/ThirdPartyPreOnlywhitenBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/ThirdPartyPreSkintuneMRTBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/ThirdPartyPreVertFilterBinary.bin;MODULE_SUFFIX=.pfb_bin
+odm/etc/camera/pfb_bin/ThirdPartyPreVertSurBinary.bin;MODULE_SUFFIX=.pfb_bin
 odm/etc/camera/qnn_binary_9052758122668408981.bin
 odm/etc/camera/selfbokehParam.json
 odm/etc/camera/selfbokehmodel.bin
@@ -821,14 +818,17 @@ odm/etc/init/virtualcameraprovider.rc
 odm/etc/vintf/manifest/manifest_oplus_camera_rfi.xml
 odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
 odm/etc/vintf/manifest/manifest_oplus_sendextcamcmd.xml
+odm/etc/virtualcamera.json
+odm/lib64/camera.device@3.2-impl.so:odm/lib64/camera.device@3.2-impl_odm.so;FIX_SONAME
+odm/lib64/camera.device@3.3-impl.so:odm/lib64/camera.device@3.3-impl_odm.so;FIX_SONAME
 odm/lib/vendor.oplus.hardware.extcamera@1.0.so
-odm/lib64/camera/awb_parameter_default.bin
+odm/lib64/camera/awb_parameter_default.bin:odm/etc/camera/awb_parameter_default.bin;SYMLINK=odm/lib64/camera/awb_parameter_default.bin
 odm/lib64/camera/com.qti.tuned.default.bin
-odm/lib64/camera/components/com.oplus.node.mvgsat.so
+odm/lib64/camera/components/com.oplus.node.mvgsat.so;DISABLE_DEPS
 odm/lib64/camera/components/com.oplus.node.preview.so
 odm/lib64/camera/components/com.oplus.node.sstabdefer.so
 odm/lib64/camera/components/com.oplus.node.sstabgme.so
-odm/lib64/camera/components/com.oplus.node.sstabphoto.so
+odm/lib64/camera/components/com.oplus.node.sstabphoto.so;DISABLE_DEPS
 odm/lib64/camera/components/com.oplus.node.sstabrealt.so
 odm/lib64/camera/libaecCustomParam_Cam0.bin
 odm/lib64/camera/libaecCustomParam_Cam1.bin
@@ -844,7 +844,7 @@ odm/lib64/hw/camera.oemlayer.so
 odm/lib64/lib2DSlender.so
 odm/lib64/libAF.so
 odm/lib64/libAlgoInterface.so
-odm/lib64/libAlgoProcess.so
+odm/lib64/libAlgoProcess.so;DISABLE_DEPS
 odm/lib64/libAncFilter.so
 odm/lib64/libAncHumVideoBase.so
 odm/lib64/libAncHumanDoubleExposure.so
@@ -868,12 +868,13 @@ odm/lib64/libFaceBeautyPre.so
 odm/lib64/libFaceDistortionCorrection.so
 odm/lib64/libFilterWrapper.so
 odm/lib64/libHIS.so;DISABLE_CHECKELF
-odm/lib64/libImageWarpMask.so
+odm/lib64/libImageWarpMask.so;FIX_SONAME
 odm/lib64/libNamaWrapper.so
+odm/lib64/libODNN.so
 odm/lib64/libOGLManager.so;DISABLE_CHECKELF
 odm/lib64/libOPAlgoCamAIBeautyBodyDetection.so
 odm/lib64/libOPAlgoCamAiBeautyEyeRetouchCn.so
-odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so
+odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so;DISABLE_CHECKELF
 odm/lib64/libOPAlgoCamAiUnifySkin.so
 odm/lib64/libOPAlgoCamFaceBeautyCap.so;DISABLE_CHECKELF
 odm/lib64/libOPAlgoCamFaceRestore.so
@@ -887,7 +888,7 @@ odm/lib64/libPolarrRender.so
 odm/lib64/libPreviewDecisionOld.so
 odm/lib64/libRedeyeReduce.so
 odm/lib64/libSNPE.so
-odm/lib64/libSnpeHta.so
+odm/lib64/libSnpeHta.so;FIX_SONAME
 odm/lib64/libSnpeHtpPrepare.so
 odm/lib64/libSnpeHtpV75Stub.so
 odm/lib64/libSuperTextWrapper.so
@@ -902,7 +903,7 @@ odm/lib64/libaisal.so
 odm/lib64/libaisd.so
 odm/lib64/libaiseg.so
 odm/lib64/libalCFR.so
-odm/lib64/libancbase_rt_fusion.so
+odm/lib64/libancbase_rt_fusion.so;FIX_SONAME
 odm/lib64/libancbase_segbase.so
 odm/lib64/libancbase_segment.so
 odm/lib64/libancbase_segmulti.so
@@ -925,8 +926,8 @@ odm/lib64/libarcsoft_high_dynamic_range_couple.so
 odm/lib64/libarcsoft_high_dynamic_range_couple_v4.so
 odm/lib64/libarcsoft_high_dynamic_range_v4.so;DISABLE_CHECKELF
 odm/lib64/libarcsoft_lensstaindetection.so
-odm/lib64/libarcsoft_long_exposure_capture.so
-odm/lib64/libarcsoft_long_exposure_preview.so
+odm/lib64/libarcsoft_long_exposure_capture.so;FIX_SONAME
+odm/lib64/libarcsoft_long_exposure_preview.so;FIX_SONAME
 odm/lib64/libarcsoft_low_light_hdr.so
 odm/lib64/libarcsoft_mcxmflpolicy.so
 odm/lib64/libarcsoft_merge_hdr_denoise_api.so
@@ -944,25 +945,26 @@ odm/lib64/libarcsoft_turbo_hdr_raw.so
 odm/lib64/libarcsoft_turbo_hdr_raw_front.so
 odm/lib64/libarcsoft_turbo_raw.so
 odm/lib64/libarcsoft_ultra_high_dynamic_range.so
-odm/lib64/libarcsoft_videoautozoom.so
-vendor/lib64/libarcsoft_triple_sat.so
-vendor/lib64/libarcsoft_triple_zoomtranslator.so
+odm/lib64/libarcsoft_videoautozoom.so;FIX_SONAME
+vendor/lib64/libarcsoft_triple_sat.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libarcsoft_triple_zoomtranslator.so;MODULE_SUFFIX=_vendor
 odm/lib64/libc++_shared.so
 odm/lib64/libcalculator.so
 odm/lib64/libcalculator_htp.so
-odm/lib64/libcppbor_external.so
-odm/lib64/libcppcose_rkp.so
 odm/lib64/libcreatebin.so
 odm/lib64/libcvface_api.so
 odm/lib64/libdualcam_optical_zoom_control.so
 odm/lib64/libdualcam_video_optical_zoom.so
 odm/lib64/libeffect_custom.so
 odm/lib64/libexif-jpeg-aps.so
+odm/lib64/libextendfile.so
 odm/lib64/libextensionlayer.so
 odm/lib64/libfovctrl.so
 odm/lib64/libfuai_vendor.so
 odm/lib64/libhwconfigurationutil.so
 odm/lib64/libhyperlapse.so
+odm/lib64/libhybridraw_datas.so
+odm/lib64/libhybridraw_tuningparams.so
 odm/lib64/libimgClarityEvaluate.so
 odm/lib64/libmpbase.so
 odm/lib64/libmvgcommon.so
@@ -973,9 +975,11 @@ odm/lib64/liboplusblur_capture_api.so
 odm/lib64/libpdCustomParamParser.so
 odm/lib64/libpngwrapper.so
 odm/lib64/libportrait_repair_qnn.so
+odm/lib64/libremosaic_wrapper.so
 odm/lib64/libroi.so
 odm/lib64/libsat.so
 odm/lib64/libsaveshaderbin.so
+odm/lib64/libsegmentPrePostProc.so
 odm/lib64/libsharebuffer.so
 odm/lib64/libsharebuffer_impl.so
 odm/lib64/libsnpe_loader.so
@@ -983,7 +987,9 @@ odm/lib64/libstblur_api.so
 odm/lib64/libstblur_capture_api.so
 odm/lib64/libstface_fd_api.so
 odm/lib64/libstfd_mobile_api.so
+odm/lib64/libtensorflowlite_oplus.so
 odm/lib64/libtfavib.so
+odm/lib64/libtrace.so
 odm/lib64/libthirdcapability.so
 odm/lib64/libtriplecam_image_optical_zoom.so
 odm/lib64/libtriplecam_optical_zoom_control.so
@@ -993,6 +999,7 @@ odm/lib64/libvega_face.so
 odm/lib64/libwatermark_photo.so
 odm/lib64/libwrapper_te.so
 odm/lib64/libyuvwrapper.so
+odm/lib64/libzlib.so
 odm/lib64/vendor.oplus.hardware.camera_rfi-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.camera_rfi-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so
@@ -1005,7 +1012,6 @@ odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl.so
-system/lib64/libziparchive.so:odm/lib64/libziparchive.so
 vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml
@@ -1054,7 +1060,6 @@ vendor/lib64/camera/com.qti.sensor.s5k2l7.so
 vendor/lib64/camera/com.qti.sensor.s5k2x5sp.so
 vendor/lib64/camera/com.qti.sensor.s5k33dxx.so
 vendor/lib64/camera/com.qti.sensor.s5k3m5.so
-vendor/lib64/camera/com.qti.sensor.s5k3p9.so
 vendor/lib64/camera/com.qti.sensor.s5k4h7.so
 vendor/lib64/camera/com.qti.sensor.s5k5e9yu05.so
 vendor/lib64/camera/com.qti.sensor.s5k5e9yx04.so
@@ -1074,7 +1079,7 @@ vendor/lib64/camera/components/com.qti.node.aon.so
 vendor/lib64/camera/components/com.qti.node.customhwnode.so
 vendor/lib64/camera/components/com.qti.node.depth.so
 vendor/lib64/camera/components/com.qti.node.depthprovider.so
-vendor/lib64/camera/components/com.qti.node.dewarp.so
+vendor/lib64/camera/components/com.qti.node.dewarp.so;DISABLE_DEPS
 vendor/lib64/camera/components/com.qti.node.dummydepth.so
 vendor/lib64/camera/components/com.qti.node.dummyrtb.so
 vendor/lib64/camera/components/com.qti.node.dummysat.so
@@ -1186,12 +1191,12 @@ vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/hw/camera.qcom.sm8650.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.offline.so
-vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/hw/com.qti.chi.override.so;DISABLE_DEPS
 vendor/lib64/libGCore4Cell_32E2.so
+vendor/lib64/libRGBC.so
+vendor/lib64/libSonyIMX471RmscLibrary.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
-vendor/lib64/libarcsoft_triple_sat.so
-vendor/lib64/libarcsoft_triple_zoomtranslator.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcamerapostproc.so
@@ -1200,7 +1205,7 @@ vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxhwnodecontext.so
 vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
+vendor/lib64/libcamximageformatutils.so;DISABLE_DEPS
 vendor/lib64/libcamxjson.so
 vendor/lib64/libcamxncsdatafactory.so
 vendor/lib64/libcamxqsatalgo.so
@@ -1209,19 +1214,19 @@ vendor/lib64/libcamxstatscore.so
 vendor/lib64/libcamxswispiqmodule.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
-vendor/lib64/libchifeature2.so
+vendor/lib64/libchifeature2.so;DISABLE_DEPS
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcommonchiutils.so
 vendor/lib64/libdepthcomputation.so
-vendor/lib64/libdualcam_optical_zoom_control.so
-vendor/lib64/libdualcam_video_optical_zoom.so
+vendor/lib64/libdualcam_optical_zoom_control.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libdualcam_video_optical_zoom.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libeepromcutter.so
 vendor/lib64/libfeutils.so
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libhdr_stub.so
 vendor/lib64/libhme.so
-vendor/lib64/libhwconfigurationutil.so
+vendor/lib64/libhwconfigurationutil.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libipebpsstriping480.so
@@ -1239,7 +1244,7 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libnanopb.so
-vendor/lib64/libolc_vnd.so
+vendor/lib64/libolc_vnd.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libopencv.so
 vendor/lib64/libopencv3a.so
 vendor/lib64/libopestriping.so
@@ -1256,19 +1261,17 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
-vendor/lib64/libtriplecam_optical_zoom_control.so
-vendor/lib64/libtriplecam_video_optical_zoom.so
+vendor/lib64/libtriplecam_optical_zoom_control.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libtriplecam_video_optical_zoom.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideoml.so
 vendor/lib64/vendor.oplus.hardware.camera.aon-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.camera.aon-service-impl.so
-vendor/lib64/vendor.oplus.hardware.camera_rfi-V1-ndk.so
-vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.camera_rfi-V1-ndk.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
-vendor/lib64/vendor.qti.hardware.camera.aon-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.offlinecamera-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.camera.offlinecamera-V2-ndk.so
 vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
@@ -1316,12 +1319,6 @@ odm/firmware/fastchg/charging_thermal_config_default.txt
 vendor/etc/charger_fw_fstab.qti
 
 # CNE
--system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
--system_ext/framework/vendor.qti.hardware.data.qmiaidlservice-V1-java.jar
-system_ext/lib64/libqmi_cci_system.so
-system_ext/lib64/libqmi_encdec_system.so
-system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.qmiaidlservice-V1-ndk.so
 vendor/app/CACertService/CACertService.apk;NODEXPO
 vendor/app/CneApp/CneApp.apk;NODEXPO;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
 vendor/app/IWlanService/IWlanService.apk;NODEXPO
@@ -1363,7 +1360,6 @@ vendor/etc/vintf/manifest/datafactoryservice-saidl.xml
 vendor/etc/vintf/manifest/mwqem-saidl.xml
 vendor/lib64/libCneAppJni.so
 vendor/lib64/libWlanServiceJni.so
-vendor/lib64/libandroid_runtime_lazy.so
 vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
@@ -1457,6 +1453,8 @@ vendor/lib64/libnspdescriptorhandler.so
 vendor/lib64/libnspdiag.so
 vendor/lib64/libnspextensionloader.so
 vendor/lib64/libnspframework.so
+vendor/lib64/libnspframeworkcore.so
+vendor/lib64/libnspframeworkcoreutility.so
 vendor/lib64/libnspgraphing.so
 vendor/lib64/libnspipc.so
 vendor/lib64/libnsposal.so
@@ -1479,15 +1477,7 @@ vendor/etc/init/vendor.qti.diag.rc
 vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/lib64/libdiag.so
 vendor/lib64/libdiagjni.so
-vendor/lib64/vendor.qti.diaghal@1.0.so
-
-# Display (Features)
-vendor/bin/feature_enabler_client
-vendor/etc/init/feature_enabler_client.rc
-vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm
-vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
-vendor/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so
-vendor/lib64/libPanelChaplin.so
+vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
@@ -1496,12 +1486,10 @@ vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libhdrvivid.so
 
 # Display (HWC)
-odm/etc/vintf/manifest/manifest_oplus_cwb_aidl.xml
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_DEPS
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/snapdragon_color_libs_config.xml
-vendor/lib64/libcwb_qcom_aidl.so
 vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdpp_manager.so
 vendor/lib64/libdpps.so
@@ -1518,23 +1506,43 @@ vendor/lib64/libsdmdal.so
 vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
-vendor/lib64/vendor.oplus.hardware.cwb-V1-ndk.so
-vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display (Pixelworks)
+odm/lib64/libpwsoftirisPCS.so
+odm/lib64/libpwirisIoctlWrapper.so
+odm/lib64/libpwirisPCS.so
+odm/lib64/libpwiriscalibrate.so
+odm/lib64/libpwirisfeature.so
+odm/lib64/libpwirisfeaturehal.so
+odm/lib64/libpwirishalwrapper.so
+odm/lib64/libpwirispq.so
+odm/lib64/libpwirisservicei7.so
+odm/lib64/libpwirisservicei7p.so
+odm/lib64/libpwirisservicesi.so
+odm/lib64/vendor.pixelworks.hardware.display-V1-ndk.so
+odm/lib64/vendor.pixelworks.hardware.display-impl-i7.so
+odm/lib64/vendor.pixelworks.hardware.display-impl-i7p.so
+odm/lib64/vendor.pixelworks.hardware.display-impl-si.so
+odm/lib64/vendor.pixelworks.hardware.display-translate-V2-ndk.so
+odm/lib64/vendor.pixelworks.hardware.display@1.0.so
+odm/lib64/vendor.pixelworks.hardware.display@1.1.so
+odm/lib64/vendor.pixelworks.hardware.display@1.2.so
+odm/lib64/vendor.pixelworks.hardware.feature-V1-ndk.so
+odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
+odm/lib64/vendor.pixelworks.hardware.feature@1.1.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
-vendor/lib64/libpwirisfeature.so
+vendor/lib64/libpwirisfeature.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libpwirishal.so
-vendor/lib64/libpwirishalwrapper.so
+vendor/lib64/libpwirishalwrapper.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.pixelworks.hardware.display-V2-ndk.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.1.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.2.so
-vendor/lib64/vendor.pixelworks.hardware.feature-V1-ndk.so
-vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so
-vendor/lib64/vendor.pixelworks.hardware.feature@1.1.so
+vendor/lib64/vendor.pixelworks.hardware.display@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.pixelworks.hardware.display@1.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.pixelworks.hardware.display@1.2.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.pixelworks.hardware.feature-V1-ndk.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.pixelworks.hardware.feature@1.1.so;MODULE_SUFFIX=_vendor
 
 # Display (SDM)
 odm/lib64/libdisplaycolorfeature.so
@@ -1563,7 +1571,6 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtestutils.so
 vendor/lib64/libtinyxml2_1.so
-vendor/lib64/libubwcp.so
 vendor/lib64/libvmfilexfer.so
 
 # Display calibration data
@@ -1602,7 +1609,6 @@ vendor/lib64/vendor.display.color@1.3.so
 vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
-vendor/lib64/vendor.qti.hardware.display.color-V1-ndk.so
 
 # DPM
 system_ext/bin/dpmd
@@ -1629,14 +1635,14 @@ vendor/etc/dpm_vndr/vendor.dpm.conf
 vendor/etc/init/dpmQmiMgr.rc
 vendor/etc/init/vendor.dpmd.rc
 vendor/etc/vintf/manifest/dpm-saidl.xml
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libdpmqmihal.so
 vendor/lib64/vendor.libdpmctmgr.so
 vendor/lib64/vendor.libdpmfdmgr.so
 vendor/lib64/vendor.libdpmframework.so
 vendor/lib64/vendor.libdpmtcm.so
-vendor/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so
+vendor/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so
 
 # DCF
@@ -1901,7 +1907,7 @@ vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpsl.so
 vendor/lib64/librcc.so
 vendor/lib64/vendor.oplus.hardware.ims-V1-ndk.so
-vendor/lib64/vendor.qti.ImsRtpService-V1-ndk.so
+vendor/lib64/vendor.qti.ImsRtpService-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.ImsRtpService-aidl-Impl.so
 vendor/lib64/vendor.qti.hardware.radio.ims-V12-ndk.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so
@@ -1927,8 +1933,8 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so
-vendor/lib64/vendor.qti.imsrtpservice@3.1.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.imsrtpservice@3.1.so;MODULE_SUFFIX=_vendor
 system_ext/framework/oplus-ims-ext.jar
 
 # Identity
@@ -1936,13 +1942,6 @@ vendor/bin/hw/android.hardware.identity-service-qti
 vendor/etc/init/android.hardware.identity-service-qti.rc
 vendor/etc/vintf/manifest/manifest_identity_credential.xml
 vendor/lib64/libqtiidentitycredential.so
-
-# IR
-odm/bin/hw/android.hardware.ir-service
-odm/etc/init/android.hardware.ir-service.rc
-odm/etc/vintf/manifest/android.hardware.ir-service.xml
-odm/lib64/android.hardware.ir-V1-ndk.so
-vendor/lib64/hw/consumerir.default.so
 
 # Kernel
 vendor/bin/init.kernel.post_boot-pineapple.sh
@@ -2067,10 +2066,10 @@ vendor/lib64/MLPD_5.pickle
 vendor/etc/public.libraries.txt
 
 # Neural networks
-odm/lib64/aiboost/libQnnHtp.so
-odm/lib64/aiboost/libQnnHtpPrepare.so
-odm/lib64/aiboost/libQnnHtpV75Stub.so
-odm/lib64/aiboost/libQnnSystem.so
+odm/lib64/aiboost/libQnnHtp.so;MODULE_SUFFIX=.aiboost
+odm/lib64/aiboost/libQnnHtpPrepare.so;MODULE_SUFFIX=.aiboost
+odm/lib64/aiboost/libQnnHtpV75Stub.so;MODULE_SUFFIX=.aiboost
+odm/lib64/aiboost/libQnnSystem.so;MODULE_SUFFIX=.aiboost
 odm/lib64/libQnnCpu.so
 odm/lib64/libQnnGpu.so
 odm/lib64/libQnnHtp.so
@@ -2080,11 +2079,11 @@ odm/lib64/libQnnHtpV75Stub.so
 odm/lib64/libQnnSaver.so
 odm/lib64/libQnnSystem.so
 odm/lib64/libaiboost.so
-odm/lib64/libaiboost_qnn_external_delegate.so
-odm/lib64/libaiboost_qnn_external_delegate_te.so
+odm/lib64/libaiboost_qnn_external_delegate.so;FIX_SONAME
+odm/lib64/libaiboost_qnn_external_delegate_te.so;FIX_SONAME
 odm/lib64/libaiboost_qnn_sr.so
 odm/lib64/libaiboost_sr.so
-odm/lib64/libaiboost_te.so
+odm/lib64/libaiboost_te.so;FIX_SONAME
 odm/lib64/libaiboost_ubwc.so
 odm/lib64/libapsultrahdr.so
 odm/lib64/libarc.fusion.so
@@ -2099,6 +2098,30 @@ odm/etc/nfc/libnfc-nci.conf_22877:vendor/etc/libnfc-nci.conf
 # OSENSE
 odm/lib64/libosenseaidlhalclient.so
 odm/lib64/libosensenativeproxy_client.so
+
+# OPLUS Display
+odm/bin/cwb_utils_aidl
+odm/bin/hw/vendor.oplus.hardware.displaypanelfeature-service
+odm/etc/displaycolorfeaturecfg.xml
+odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc
+odm/etc/vintf/manifest/manifest_displaycolorfeature_aidl.xml
+odm/etc/vintf/manifest/manifest_oplus_cwb_aidl.xml
+odm/etc/vintf/manifest/manifest_oplus_displaypanelfeature_aidl.xml
+odm/lib64/libdisplayaidlapis.so
+odm/lib64/libdisplaycolorfeature.so
+odm/lib64/libdisplayfossfeature_nature.so
+odm/lib64/libdpaservice.so
+odm/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so
+vendor/bin/feature_enabler_client
+vendor/etc/init/feature_enabler_client.rc
+vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm
+vendor/lib64/libcwb_qcom_aidl.so
+vendor/lib64/vendor.oplus.hardware.cwb-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
+vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libPanelChaplin.so
 
 # OPLUS Performance
 odm/bin/hw/vendor-oplus-hardware-performance-V1-service
@@ -2124,11 +2147,6 @@ vendor/lib64/libpdnotifier.so
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
-
-# PSI Client
-vendor/bin/hw/vendor.qti.psiclient@1.0-service
-vendor/etc/init/vendor.qti.psiclient@1.0-service.rc
-vendor/lib64/libpsi.so
 
 # Power-off alarm
 vendor/bin/hw/vendor.qti.hardware.alarm-service
@@ -2167,10 +2185,10 @@ vendor/etc/vintf/manifest/qesdk-manager.xml
 vendor/etc/vintf/manifest/vendor.qti.qccvndhal_aidl-service.xml
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqcc_sdk.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so
-vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so
 
 # QCV
@@ -2228,11 +2246,11 @@ vendor/lib64/libqsocket.so
 vendor/lib64/libsmemlog.so
 vendor/lib64/libsystem_health_mon.so
 
-# QSPA
-vendor/bin/vendor.qti.qspa-service
-vendor/etc/init/vendor.qti.qspa-service.rc
-vendor/etc/vintf/manifest/vendor.qti.qspa-service.xml
-vendor/lib64/vendor.qti.hardware.qspa-V1-ndk.so
+# QSPM
+vendor/lib64/libqspm-mem-utils-vendor.so
+vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
+vendor/lib64/vendor.qti.qspmhal-impl.so
+vendor/lib64/vendor.qti.qspmhal@1.0.so
 
 # QVR
 vendor/bin/hw/qvrservice
@@ -2260,10 +2278,11 @@ vendor/lib64/libqvr_cdsp_driver_stub.so
 vendor/lib64/libqvr_eyetracking_plugin.so
 vendor/lib64/libqvrcamera_client.qti.so
 vendor/lib64/libqvrcameraplayback.so
-vendor/lib64/libqvrservice.so
+vendor/lib64/libqvrservice.so;DISABLE_DEPS
 vendor/lib64/libqvrservice_client.qti.so
 vendor/lib64/libtracker_6dof_impl.so
 vendor/lib64/vendor.qti.hardware.qxr-V1-ndk.so
+vendor/lib64/vendor.qti.qegahal-V1-ndk_platform.so
 
 # RIL
 odm/etc/vintf/manifest/device_manifest_communication_center_aidl.xml
@@ -2393,7 +2412,8 @@ vendor/lib64/qtiPeripheralMgr.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
 vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk.so
-vendor/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
+vendor/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.data.connection@1.0.so
 vendor/lib64/vendor.qti.hardware.data.connection@1.1.so
 vendor/lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so
@@ -2665,7 +2685,6 @@ odm/bin/hw/vendor-oplus-hardware-touch-V2-service
 odm/etc/init/init.touchDaemon.rc
 odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
 odm/etc/vintf/manifest/manifest_touch_aidl.xml
-odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so
 
 # Touch(URCC)
 odm/lib64/liboplus-uah-client.so
@@ -2761,7 +2780,7 @@ system_ext/lib64/libwfdmmsink.so
 system_ext/lib64/libwfdmmsrc_system.so
 system_ext/lib64/libwfdnative.so;SYMLINK=system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so
 system_ext/lib64/libwfdrtsp.so
-system_ext/lib64/libwfdservice.so
+system_ext/lib64/libwfdservice.so;DISABLE_DEPS
 system_ext/lib64/libwfdsinksm.so
 system_ext/lib64/libwfduibcinterface.so
 system_ext/lib64/libwfduibcsink.so
@@ -2769,6 +2788,7 @@ system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so
 system_ext/priv-app/WfdService/WfdService.apk;NODEXPO
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
@@ -2804,5 +2824,5 @@ vendor/lib64/libwfduibcsinkinterface_vendor.so
 vendor/lib64/libwfduibcsrc_vendor.so
 vendor/lib64/libwfduibcsrcinterface_vendor.so
 vendor/lib64/libwfdutils_proprietary.so
-vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
