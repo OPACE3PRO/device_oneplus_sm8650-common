@@ -112,10 +112,9 @@
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
-        <item>0</item> <!-- Natural -->
-        <item>1</item> <!-- Boosted -->
-        <item>2</item> <!-- Saturated -->
-        <item>3</item> <!-- Adaptive -->
+        <item>303</item>
+        <item>301</item>
+        <item>307</item>
     </integer-array>
 
     <!-- Default list of files pinned by the Pinner Service -->
